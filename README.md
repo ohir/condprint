@@ -22,7 +22,7 @@ Both `If` and `IfNot` return condition intact.
 
 ### <a name="Verbose">func</a> [Verbose](/cpr.go?s=1862:1908#L53)
 ``` go
-func Verbose(V bool, opts ...interface{})
+func Verbose(V bool, opts ...interface{}) func(fmt string, a ...interface{})
 ```
 function Verbose(V bool, ...opts) (printf) returns a printf type function
 (for V being true), or an empty stub (for V being false).
